@@ -1,0 +1,22 @@
+Methods
+
+1	POST RegisterGame 
+IN: = {String userID, double score, double wins,  double kills, double timePlayed}
+OUT: 200= “OK”
+ERR: 404= “Incorrect input  parameters”
+
+
+2	GET GetLeaderBoardX 
+OUT: 200= [{String userID, double value}, …]
+ERR: 404= “No data”
+
+3	DELETE DeleteUser
+IN: {String userID } 
+OUT: 200= «OK»
+ERR:  404=  “Player is  not found”
+
+
+*time/timePlayed stores the number of seconds as int.
+*all GET requests return collections of up to 100 (top) elements
+
+Schema: Records: (userID, score, wins, kills, timePlayed)
