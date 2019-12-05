@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+
+    <servlet>
+        <servlet-name>DeleteUser</servlet-name>
+        <servlet-class>servlets.DeleteUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteUser</servlet-name>
+        <url-pattern>/DeleteUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetLeaderBoardX</servlet-name>
+        <servlet-class>servlets.GetScoreboardX</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetLeaderBoardX</servlet-name>
+        <url-pattern>/GetLeaderBoardX</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterGame</servlet-name>
+        <servlet-class>servlets.RegisterGameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterGame</servlet-name>
+        <url-pattern>/RegisterGame</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
