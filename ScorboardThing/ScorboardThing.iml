@@ -15,6 +15,12 @@
     <facet type="app-engine-standard" name="Google App Engine Standard">
       <configuration />
     </facet>
+    <facet type="app-engine-flexible" name="Google App Engine Flexible">
+      <configuration>
+        <option name="appYamlPath" value="C:\Users\xazar\UdemyJava\ScorboardThing\src\appengine\app.yaml" />
+        <option name="dockerDirectory" value="" />
+      </configuration>
+    </facet>
   </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/target/ScorboardThing-1.0-SNAPSHOT/WEB-INF/classes" />

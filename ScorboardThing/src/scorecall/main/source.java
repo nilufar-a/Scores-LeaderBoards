@@ -21,7 +21,7 @@ public class source {
         Connection connection = null;
         try {
 
-            connection = DbConnect.conn();
+            connection = DbConnect.connection();
 
         } catch (ServletException ex) {
             System.out.println("SQL Error: " + ex.getMessage());
@@ -53,7 +53,7 @@ public class source {
         {
             Connection connection = null;
             try {
-                connection = DbConnect.conn();
+                connection = DbConnect.connection();
             } catch (ServletException e) {
                 e.printStackTrace();
             }
@@ -84,7 +84,7 @@ public class source {
         Connection connection = null;
         try {
 
-            connection = DbConnect.conn();
+            connection = DbConnect.connection();
 
         } catch (ServletException ex) {
             System.out.println("SQL Error: " + ex.getMessage());
@@ -113,7 +113,7 @@ public class source {
 
         Connection connection = null;
         try {
-            connection = DbConnect.conn();
+            connection = DbConnect.connection();
         } catch (ServletException e) {
             e.printStackTrace();
         }
@@ -146,7 +146,7 @@ public class source {
         Connection connection = null;
         try {
 
-            connection = DbConnect.conn();
+            connection = DbConnect.connection();
 
         } catch (ServletException ex) {
             System.out.println("SQL Error: " + ex.getMessage());

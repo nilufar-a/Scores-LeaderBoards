@@ -1,7 +1,6 @@
 package servlets;
 
 
-import com.google.api.client.http.HttpStatusCodes;
 import com.google.gson.Gson;
 import main.source;
 
@@ -28,9 +27,10 @@ public class GetScoreboardX extends HttpServlet {
         if (boardName.equals(BoardName.score.toString()) || boardName.equals(BoardName.wins.toString()) || boardName.equals(BoardName.kills.toString()) || boardName.equals(BoardName.timePlayed.toString())) {
             String json = source.getSomeBoard(boardName);
             out.print(json);
+            resp.setStatus(HttpServletResponse.SC_OK);
         } else {
             Gson gson = new Gson();
-            out.print(gson.toJson(HttpStatusCodes.STATUS_CODE_NOT_FOUND + " No such table"));
+            resp.sendError(HttpServletResponse.SC_NOT_FOUND,"No such data/table");
         }
         out.flush();
 

@@ -10,9 +10,13 @@
 
 
 
-POST http://localhost:8080/RegisterGame?userID=SamirBerde&score=4&wins=632&kills=19&timePlayed=9.5
+POST https://scores-and-leaderboards-dot-trainingprojectlab2019.appspot.com/RegisterGame?userID=SamirBerde&score=4&wins=632&kills=19&timePlayed=9.5
 ###
-GET http://localhost:8080/GetLeaderBoardX?boardName=score
+POST http://localhost:8080/RegisterGame?userID=Murad&score=200&wins=500&kills=12&timePlayed=24
+###
+
+
+GET scores-and-leaderboards-dot-trainingprojectlab2019.appspot.com/GetLeaderBoardX?boardName=score
 ###
 GET http://localhost:8080/GetLeaderBoardX?boardName=wins
 ###
@@ -20,7 +24,7 @@ GET http://localhost:8080/GetLeaderBoardX?boardName=kills
 ###
 GET http://localhost:8080/GetLeaderBoardX?boardName=timePlayed
 ###
-DELETE http://localhost:8080/DeleteUser?userID=SamirBerde
+DELETE http://scores-and-leaderboards-dot-trainingprojectlab2019.appspot.com/DeleteScore?userID=Murad
 ###
 
 

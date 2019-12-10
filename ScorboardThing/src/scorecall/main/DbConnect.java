@@ -7,14 +7,14 @@ import java.sql.SQLException;
 
 public class DbConnect {
 
-    public static Connection connection() throws ServletException
+    public static Connection conn() throws ServletException
     {
         Connection connection=null;
         try {
             Class.forName("com.mysql.jdbc.Driver");
             String user="root";
             String password="root";
-            String url="trainingprojectlab2019:europe-west1:project-lab/projectlab?user=root"; //jdbc:mysql://127.0.0.1:3306/projectlab?user=root
+            String url="jdbc:mysql://127.0.0.1:3306/projectlab?user=root";
 
             connection=(Connection) DriverManager.getConnection(url,user,password);
         }
@@ -48,7 +48,7 @@ public class DbConnect {
         }
     }
 
-    public static Connection conn () throws ServletException
+    public static Connection connection() throws ServletException
     {
         try {
 

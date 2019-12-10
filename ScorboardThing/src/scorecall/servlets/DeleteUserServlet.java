@@ -1,6 +1,5 @@
 package servlets;
 
-import com.google.api.client.http.HttpStatusCodes;
 import com.google.gson.Gson;
 import main.source;
 
@@ -12,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name="DeleteUser",urlPatterns = "DeleteUser")
+@WebServlet(name="DeleteScore",urlPatterns = "DeleteScore")
 public class DeleteUserServlet extends HttpServlet {
     @Override
     protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -24,10 +23,11 @@ public class DeleteUserServlet extends HttpServlet {
         Gson gson = new Gson();
         if (source.deleteUser(userID)) {
 
-            out.print(gson.toJson(HttpStatusCodes.STATUS_CODE_OK));
+            resp.setStatus(HttpServletResponse.SC_OK);
+
 
         } else {
-           out.print(gson.toJson(HttpStatusCodes.STATUS_CODE_NOT_FOUND));
+           resp.sendError(HttpServletResponse.SC_NOT_FOUND,"Player not found");
         }
 
        out.flush();

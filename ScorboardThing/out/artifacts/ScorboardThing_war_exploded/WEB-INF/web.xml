@@ -6,12 +6,12 @@
 
 
     <servlet>
-        <servlet-name>DeleteUser</servlet-name>
+        <servlet-name>DeleteScore</servlet-name>
         <servlet-class>servlets.DeleteUserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>DeleteUser</servlet-name>
-        <url-pattern>/DeleteUser</url-pattern>
+        <servlet-name>DeleteScore</servlet-name>
+        <url-pattern>/DeleteScore</url-pattern>
     </servlet-mapping>
 
     <servlet>
