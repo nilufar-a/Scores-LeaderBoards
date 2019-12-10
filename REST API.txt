@@ -7,8 +7,11 @@ ERR: 404= “Incorrect input  parameters”
 
 
 2	GET GetLeaderBoardX 
+IN: String boardName  
 OUT: 200= [{String userID, double value}, …]
 ERR: 404= “No data”
+
+boardName can be {wins,kills,timePlayed,score}
 
 3	DELETE DeleteUser
 IN: {String userID } 
