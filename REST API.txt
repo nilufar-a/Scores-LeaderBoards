@@ -13,7 +13,7 @@ ERR: 404= “No data”
 
 boardName can be {wins,kills,timePlayed,score}
 
-3	DELETE DeleteUser
+3	DELETE DeleteScore
 IN: {String userID } 
 OUT: 200= «OK»
 ERR:  404=  “Player is  not found”
